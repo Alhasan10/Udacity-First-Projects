@@ -1,0 +1,102 @@
+/* Updated Header Styling */
+header {
+    background-color: #5c9ead; /* New header color */
+    padding: 1.5rem;
+    text-align: center;
+}
+
+header h1 a {
+    color: #ffffff;
+    text-decoration: none;
+    font-family: 'Arial Black', Gadget, sans-serif;
+}
+
+nav a {
+    color: #ffffff;
+    margin: 0 15px;
+    font-weight: bold;
+    font-family: 'Verdana', sans-serif;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #333;
+}
+
+/* Styling for "Read more" Links as Buttons */
+.read-more {
+    display: inline-block;
+    padding: 0.5rem 1.2rem;
+    background-color: #5c9ead;
+    color: #ffffff;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    font-family: 'Verdana', sans-serif;
+}
+
+.read-more:hover {
+    background-color: #4a8a91;
+}
+
+/* Post Container Layout */
+.post-container {
+    display: flex;
+    gap: 2rem;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+
+/* Post Card Styling */
+.post-card {
+    background-color: #f9f9f9;
+    padding: 1.5rem;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    width: calc(45% - 1rem);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.post-card h3 {
+    color: #333;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 0.5rem;
+}
+
+.post-card p {
+    color: #555;
+    font-family: 'Georgia', serif;
+    margin-bottom: 1rem;
+}
+
+/* Circular Image Styling */
+.post-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    object-fit: cover;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #4a8a91;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    font-size: 0.9rem;
+    margin-top: 2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .post-card {
+        width: 100%;
+    }
+}

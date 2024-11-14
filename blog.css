@@ -1,0 +1,32 @@
+/* Style for the Blog Post Article */
+article {
+    max-width: 800px; /* Limits the width of the article for readability */
+    margin: 2rem auto; /* Center the article */
+    padding: 2rem;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+}
+
+/* Image Styling */
+figure {
+    text-align: center;
+    margin: 20px 0;
+}
+
+figure img {
+    max-width: 100%; /* Ensures the image doesn’t overflow */
+    height: auto;
+    border-radius: 8px; /* Softly rounds the image corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a shadow for depth */
+    border: 2px solid #4a8a91; /* Adds a colored border */
+}
+
+/* Figcaption Styling */
+figcaption {
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: 5px;
+    text-align: center;
+}

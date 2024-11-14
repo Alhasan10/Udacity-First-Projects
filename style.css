@@ -1,0 +1,154 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    color: #4a4a4a;
+    background-color: #f3f4f6; /* light background color for contrast */
+}
+
+/* Header Styling */
+header {
+    background-color: #a8d5ba; /* Soft green */
+    color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 2rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #ffffff;
+    margin: 0; /* Remove margin to align with nav */
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+}
+
+nav a {
+    color: #ffffff; /* White links in header */
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1rem;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Main Content Styling */
+main {
+    padding: 2rem;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+h2 {
+    font-size: 1.8rem;
+    color: #333333;
+    margin-bottom: 0.5rem;
+}
+
+h3 {
+    font-size: 1.4rem;
+    color: #333333;
+    margin-top: 1rem;
+}
+
+#latest-posts img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 1rem;
+}
+
+#latest-posts .post-card {
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #ffffff;
+}
+
+/* Post Container Styling */
+.post-container {
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between; /* Spreads posts across the available space */
+}
+
+/* Post Card Styling */
+.post-card {
+    flex: 1; /* Allows each post to take equal space */
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #ffffff;
+    max-width: 48%; /* Adjusts width to fit two posts in a row */
+}
+
+/* Circular Image Styling */
+.post-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%; /* Makes image circular */
+    object-fit: cover;
+}
+
+.circular-image {
+    width: 100%; /* Adjust size as needed */
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover;
+}
+
+
+
+/* Footer Styling */
+footer {
+    background-color: #a8d5ba; /* Soft pink */
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: #4a4a4a; /* Darker color for contrast */
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Utility Classes */
+.text-center {
+    text-align: center;
+}
+
+.read-more {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #a8d5ba; /* Soft green */
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+}
+
+.read-more:hover {
+    background-color: #89c4a5; /* Darker shade for hover effect */
+}
+
+
