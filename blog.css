@@ -30,3 +30,102 @@ figcaption {
     margin-top: 5px;
     text-align: center;
 }
+
+.author-image {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+h1, h2, h3 {
+    margin: 1rem 0;
+}
+
+@media (max-width: 768px) {
+    .author-image {
+        max-width: 100%;
+    }
+
+    nav a {
+        font-size: 0.9rem;
+    }
+}
+
+img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+
+/* For mobile devices (up to 768px width) */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav {
+        display: block;
+        margin-top: 10px;
+    }
+
+    .post-container {
+        display: block;
+    }
+
+    .post-card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    footer {
+        font-size: 0.8rem;
+    }
+}
+
+/* For tablets (768px to 1024px width) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .post-container {
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5rem;
+    }
+
+    .post-card {
+        width: 48%;
+    }
+}
+
+/* For desktop (above 1024px width) */
+@media (min-width: 1025px) {
+    .post-container {
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+
+    .post-card {
+        width: 45%;
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    nav a {
+        font-size: 1rem;
+    }
+}

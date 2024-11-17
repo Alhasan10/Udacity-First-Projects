@@ -1,15 +1,23 @@
 /* Updated Header Styling */
 header {
-    background-color: #5c9ead; /* New header color */
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    background-color: #5c9ead; /* Header background */
     padding: 1.5rem;
-    text-align: center;
 }
 
-header h1 a {
-    color: #ffffff;
-    text-decoration: none;
-    font-family: 'Arial Black', Gadget, sans-serif;
+header h1 {
+    grid-column: 1 / 2;
 }
+
+nav {
+    grid-column: 2 / 3;
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+}
+
 
 nav a {
     color: #ffffff;
@@ -43,12 +51,35 @@ nav a:hover {
 
 /* Post Container Layout */
 .post-container {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Adjusts for responsiveness */
     gap: 2rem;
-    justify-content: space-around;
-    flex-wrap: wrap;
     margin-top: 1rem;
 }
+
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    background-color: #4a8a91;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+footer p {
+    grid-column: 1 / 2;
+    margin: 0;
+}
+
+footer a {
+    grid-column: 2 / 3;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
 
 /* Post Card Styling */
 .post-card {
@@ -94,9 +125,73 @@ footer {
     margin-top: 2rem;
 }
 
-/* Responsive Design */
+
+
 @media (max-width: 768px) {
+    .post-container {
+        grid-template-columns: 1fr; /* Single column on smaller screens */
+    }
+}
+
+/* For mobile devices (up to 768px width) */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav {
+        display: block;
+        margin-top: 10px;
+    }
+
+    .post-container {
+        display: block;
+    }
+
     .post-card {
         width: 100%;
+        margin-bottom: 20px;
+    }
+
+    footer {
+        font-size: 0.8rem;
+    }
+}
+
+/* For tablets (768px to 1024px width) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .post-container {
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5rem;
+    }
+
+    .post-card {
+        width: 48%;
+    }
+}
+
+/* For desktop (above 1024px width) */
+@media (min-width: 1025px) {
+    .post-container {
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+
+    .post-card {
+        width: 45%;
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    nav a {
+        font-size: 1rem;
     }
 }
