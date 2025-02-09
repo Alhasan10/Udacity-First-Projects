@@ -1,0 +1,39 @@
+@import url('all-styles.css');
+@import url('style.css');
+@import url('blog.css');
+@import url('style2.css');
+@import url('style3.css');
+
+/* Default Post Container Styling */
+.post-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+/* Default Post Card Styling */
+.post-card {
+    flex: 1;
+    max-width: 48%; /* Ensures two cards per row on larger screens */
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #ffffff;
+}
+
+/* ✅ Fixing Mobile View */
+@media (max-width: 768px) {
+    .post-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%; /* Ensures full-width usage */
+    }
+
+    .post-card {
+        width: 90%; /* Expands post cards to nearly full screen */
+        max-width: 100%; /* Prevents unnecessary shrinking */
+        margin-bottom: 20px; /* Adds spacing */
+    }
+}
